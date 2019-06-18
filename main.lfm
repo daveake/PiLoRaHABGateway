@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 248
+  Height = 549
+  Top = 181
+  Width = 713
+  Caption = 'Pi LoRa HAB Gateway'
+  ClientHeight = 549
+  ClientWidth = 713
+  OnCreate = FormCreate
+  LCLVersion = '2.0.0.4'
+  object ListBox1: TListBox
+    Left = 17
+    Height = 512
+    Top = 13
+    Width = 667
+    ItemHeight = 0
+    ScrollWidth = 665
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object tmrPoll: TTimer
+    Interval = 100
+    OnTimer = tmrPollTimer
+    left = 49
+    top = 53
+  end
+end
